@@ -8,7 +8,7 @@ In 2023 I worked as a journalist and digital content editor at a provincial broa
 
 The Creator Centre could not export this data, so we scrolled through the video list by hand and copied each video's numbers into a spreadsheet. The job took hours each month and mistakes were easy to make.
 
-I had no IT background. I taught myself JavaScript, asked a programmer friend for advice when I got stuck, and wrote this script. The monthly task dropped to about 10-20 minutes per person, and colleagues and managers began using it for their own reporting.
+I had no IT background. I taught myself JavaScript, asked a programmer friend for advice when I got stuck, and wrote this script. The monthly task dropped to about 10-20 minutes per person, and colleagues and managers began using it for their own reporting. When my team and colleagues from other teams said they needed data for other periods, I added a month picker so they could export any month, and wrote a version that exported a whole year.
 
 ## What it does
 
@@ -19,6 +19,11 @@ I had no IT background. I taught myself JavaScript, asked a programmer friend fo
 5. Downloads two files:
    * `<month>抖音数据.csv`: date, title, likes and views, ready for Excel.
    * `<month>抖音数据.html`: a table with cover thumbnails, which can be printed or saved as PDF for reports.
+  
+## Versions and branches
+- `main` (this branch): pick any month and export that month's videos.
+- Whole-year export: the first upload (`b938312`, April 2023) contains a second copy of the script that exports every video from a chosen year. It was removed from `main` in June 2023 when CSV export was added.
+- `multiple-months`: an extension I started in June 2023 to export several months in one run. It is unfinished: the start date is still hard-coded, so it does not use the month picker yet.
 
 ## How to use it
 
